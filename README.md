@@ -11,3 +11,11 @@ Source: [Geofabrik Shanghai OpenStreetMap extract dated 2026-09-28](https://down
 **License and attribution:** contains data © OpenStreetMap contributors, available under the [Open Database License 1.0 (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/). See [OpenStreetMap copyright and attribution](https://www.openstreetmap.org/copyright). The JSON is available in machine-readable form under the same data license. LifeMap must display appropriate OpenStreetMap attribution when showing a route derived from this pack.
 
 This is a zero-cost development distribution mechanism. The production Resource Provider can use a different host without changing the Train/Flight resolver.
+
+## Signed regional catalog and East China passenger rail pack (2026-10-01)
+
+`catalog.json` (revision 2) is signed with Ed25519; `catalog.sig` is the detached signature. The app pins the public key, verifies the catalog before applying an update, and verifies each pack against its signed SHA-256 digest, exact byte count and version. A bundled catalog remains available when this static host cannot be reached.
+
+`packs/cn-east-coast-rail-20261001.json` is a 426,391-byte regional graph of public railway geometry and station transfers for the Hangzhou East–Tongxiang–Shanghai Hongqiao–Hai'an–Laiyang–Yantai corridor. Its SHA-256 is `374bcdaa97c1ce8cd05d136dd0bac398581ec99729c1d1b48b319e32e828014f`. The build used Geofabrik OpenStreetMap Zhejiang, Shanghai and Shandong extracts dated 2026-09-13, and Jiangsu dated 2026-09-29. Yard, siding, depot, industrial and known freight-only sections are excluded. The graph can provide a reasonable **Inferred** passenger rail path between independently established station endpoints. It does not claim the rider's actual train, service, transfers or track.
+
+The graph is a derivative OpenStreetMap database, attributed to © OpenStreetMap contributors and distributed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/). See [OpenStreetMap copyright](https://www.openstreetmap.org/copyright). Its JSON includes source way IDs and license metadata. Static catalog and pack requests contain no user coordinates, Raw Location, photos or Journey state.
