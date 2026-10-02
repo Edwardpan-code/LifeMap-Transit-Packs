@@ -152,6 +152,38 @@
       "attribution": "© OpenStreetMap contributors; source-tagged passenger rail stations and routes shared under ODbL 1.0",
       "role": "railFacilities",
       "downloadURL": "https://raw.githubusercontent.com/Edwardpan-code/LifeMap-Transit-Packs/main/packs/cn-guangzhou-metro-3-facilities-20261002.json"
+    },
+    {
+      "attribution": "© OpenStreetMap contributors; source-tagged passenger rail stations and routes shared under ODbL 1.0",
+      "byteCount": 65268,
+      "downloadURL": "https://raw.githubusercontent.com/Edwardpan-code/LifeMap-Transit-Packs/main/packs/cn-shanghai-passenger-rail-20261002.json",
+      "licenses": [
+        {
+          "name": "OpenStreetMap ODbL 1.0",
+          "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+        }
+      ],
+      "packID": "cn-shanghai-passenger-rail",
+      "regionID": "cn-shanghai-passenger-rail",
+      "role": "trainNetwork",
+      "sha256": "238cd21f18e6bb4179c8acb3517a32fc819b379643914713f0cc3b5c1764b80b",
+      "version": "2026-10-02-reconciliation"
+    },
+    {
+      "attribution": "© OpenStreetMap contributors; source-tagged passenger rail stations and routes shared under ODbL 1.0",
+      "byteCount": 13704,
+      "downloadURL": "https://raw.githubusercontent.com/Edwardpan-code/LifeMap-Transit-Packs/main/packs/cn-shanghai-passenger-facilities-20261002.json",
+      "licenses": [
+        {
+          "name": "OpenStreetMap ODbL 1.0",
+          "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+        }
+      ],
+      "packID": "cn-shanghai-passenger-facilities",
+      "regionID": "cn-shanghai-passenger-rail",
+      "role": "railFacilities",
+      "sha256": "69dc8040e2d44d92653db5bfc5b018d7a5ee78a0d23e554e2ce165646052f492",
+      "version": "2026-10-02-reconciliation"
     }
   ],
   "regions": [
@@ -270,9 +302,24 @@
         "cn-guangzhou-metro-3",
         "cn-guangzhou-metro-3-facilities"
       ]
+    },
+    {
+      "bounds": [
+        [
+          30.9,
+          121.15,
+          31.35,
+          121.85
+        ]
+      ],
+      "id": "cn-shanghai-passenger-rail",
+      "packIDs": [
+        "cn-shanghai-passenger-rail",
+        "cn-shanghai-passenger-facilities"
+      ]
     }
   ],
-  "catalogRevision": 4,
+  "catalogRevision": 5,
   "update": {
     "catalogURL": "https://raw.githubusercontent.com/Edwardpan-code/LifeMap-Transit-Packs/main/catalog.json",
     "signatureURL": "https://raw.githubusercontent.com/Edwardpan-code/LifeMap-Transit-Packs/main/catalog.sig",
